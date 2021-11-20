@@ -66,17 +66,17 @@
 
 
 				<h3> Insertar Insumos </h3>
-				<form action="insertar_insumos.php" method="post">
+				<form action="insertar_insumo.php" method="post">
 					<input type="submit" value = "Insertar">
 				</form>
 
 				<h3> Eliminar Insumos </h3>
-				<form action="eliminar_insumos.php" method="post">
+				<form action="eliminar_insumo.php" method="post">
 					<input type="submit" value = "Eliminar">
 				</form>
 
 				<h3> Actualizar Insumos </h3>
-				<form action="actualizar_insumos.php" method="post">
+				<form action="actualizar_insumo.php" method="post">
 					<input type="submit" value = "Actualizar">
 				</form>
 			</div>

@@ -31,7 +31,7 @@ CREATE TABLE `insumos` (
   `id_insumos` int(11) NOT NULL,
   `descripcion` varchar(30) DEFAULT NULL,
   `cantidad_unidades` int(30) DEFAULT NULL,
-  `disponibilidad` tinyint(1) DEFAULT NULL,
+  `disponibilidad` tinyint(1) DEFAULT NULL
   
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -64,7 +64,7 @@ ALTER TABLE `insumos`
 -- AUTO_INCREMENT for table `clientes`
 --
 ALTER TABLE `insumos`
-  MODIFY `id_insumos` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_insumos` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
