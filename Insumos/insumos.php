@@ -56,10 +56,10 @@
 				<br><br>
 
 				<h3> Consulta Insumos </h3>
-				<form action="consulta_especifica_cliente.php" method="post">
-					Por id:  <input type="text" name = "id_cliente">
+				<form action="consulta_especifica_insumo.php" method="post">
+					Por id:  <input type="text" name = "id_insumos">
 					<br>
-					Por descripcion: <input type="text" name = "nombre">
+					Por descripcion: <input type="text" name = "descripcion">
 					<br>
 					<input type="submit" value = "consulta">
 				</form>
