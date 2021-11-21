@@ -32,7 +32,7 @@ CREATE TABLE `proveedores` (
   `razonsocial` varchar(100) NOT NULL,
   `cuit` varchar(30) NOT NULL,
   `direccion` varchar(50) NOT NULL,
-  `telefono` varchar(30) NOT NULL,
+  `telefono` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -54,7 +54,7 @@ INSERT INTO `proveedores` (`id_proveedor`, `razonsocial`, `cuit`,`direccion`,`te
 -- Indexes for table `clientes`
 --
 ALTER TABLE `proveedores`
-  ADD PRIMARY KEY (`id_proveedores`);
+  ADD PRIMARY KEY (`id_proveedor`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -64,7 +64,7 @@ ALTER TABLE `proveedores`
 -- AUTO_INCREMENT for table `proveedores`
 --
 ALTER TABLE `proveedores`
-  MODIFY `id_proveedores` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_proveedor` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
