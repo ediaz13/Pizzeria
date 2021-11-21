@@ -10,17 +10,17 @@
 			<div id="banner"></div>
             <nav id="navigation">
                 <ul id="nav">
-                    <li><a href="..index.php">Inicio</a></li>
-                    <li><a href="../Clientes/clientes.php">Clientes</a></li>
-                    <li><a href="../Proveedores/proveedores.php">Distribuidores</li>
+                    <li><a href="index.php">Inicio</a></li>
+                    <li><a href="clientes.php">Clientes</a></li>
+                    <li><a href="proveedores.php">Distribuidores</li>
                     <li><a href="insumos.php">Insumos</a></li>
                 </ul>
             </nav>
 			<div id="content_area">
                   <h2> Actualizar Insumos</h4>
 				<form action="actualizar.php" method="post">
-					<p> Ingrese el id del Insumo.. </p>
-					id insumo <input type="number" name="id_insumos"> 
+					<p> Ingrese el id del Insumo. </p>
+					ID Insumo <input type="number" name="id_insumos"> 
 					<br>
 					<p> Ingrese el valor de los campos a modificar.. <p>
 					<br>		
