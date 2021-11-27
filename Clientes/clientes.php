@@ -22,11 +22,42 @@
                 <ul id="nav">
                     <li><a href="../index.php">Inicio</a></li>
                     <li><a href="clientes.php">Clientes</a></li>
-                    <li><a href="../Proveedores/proveedores.php">Distribuidores</li>
+                    <li><a href="../Proveedores/proveedores.php">Proveedores</li>
                     <li><a href="../Insumos/insumos.php">Insumos</a></li>
                 </ul>
             </nav>
 			<div id="content_area">
+
+				<h3> Consulta Cliente </h3>
+				<form action="consulta_especifica_cliente.php" method="post">
+					Por id:  <input type="text" name = "id_cliente">
+					<br>
+					Por nombre: <input type="text" name = "nombre">
+					<br>
+					Por apellido: <input type="text" name = "apellido">
+					<br>
+					<br>
+					<input type="submit" value = "consulta">
+				</form>
+
+
+				<h3> Insertar Cliente </h3>
+				<form action="insertar_cliente.php" method="post">
+					<input type="submit" value = "Insertar">
+				</form>
+
+				<h3> Eliminar Cliente </h3>
+				<form action="eliminar_cliente.php" method="post">
+					<input type="submit" value = "Eliminar">
+				</form>
+
+				<h3> Actualizar Cliente </h3>
+				<form action="actualizar_cliente.php" method="post">
+					<input type="submit" value = "Actualizar">
+				</form>
+
+				<br><br>
+				
 				<table border="1">
 					<tr>
 						<td></td>
@@ -67,33 +98,7 @@
 				</table>
 				<br><br>
 
-				<h3> Consulta Cliente </h3>
-				<form action="consulta_especifica_cliente.php" method="post">
-					Por id:  <input type="text" name = "id_cliente">
-					<br>
-					Por nombre: <input type="text" name = "nombre">
-					<br>
-					Por apellido: <input type="text" name = "apellido">
-					<br>
-					<br>
-					<input type="submit" value = "consulta">
-				</form>
-
-
-				<h3> Insertar Cliente </h3>
-				<form action="insertar_cliente.php" method="post">
-					<input type="submit" value = "Insertar">
-				</form>
-
-				<h3> Eliminar Cliente </h3>
-				<form action="eliminar_cliente.php" method="post">
-					<input type="submit" value = "Eliminar">
-				</form>
-
-				<h3> Actualizar Cliente </h3>
-				<form action="actualizar_cliente.php" method="post">
-					<input type="submit" value = "Actualizar">
-				</form>
+				
 				
 			
 		</div>

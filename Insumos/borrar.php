@@ -30,7 +30,7 @@ $resultado = mysqli_query($con,$sql);
                 <ul id="nav">
                     <li><a href="../index.php">Inicio</a></li>
                     <li><a href="../Clientes/clientes.php">Clientes</a></li>
-                    <li><a href="../Proveedores/proveedores.php">Distribuidores</li>
+                    <li><a href="../Proveedores/proveedores.php">Proveedores</li>
                     <li><a href="insumos.php">Insumos</a></li>
                 </ul>
             </nav>

@@ -27,7 +27,7 @@ mysqli_close($con);
                 <ul id="nav">
                     <li><a href="../index.php">Inicio</a></li>
                     <li><a href="clientes.php">Clientes</a></li>
-                    <li><a href="proveedores.php">Distribuidores</li>
+                    <li><a href="proveedores.php">Proveedores</li>
                     <li><a href="#">Insumos</a></li>
                 </ul>
             </nav>
