@@ -34,7 +34,7 @@ $resultado = mysqli_query($con,$sql);
                     <li><a href="insumos.php">Insumos</a></li>
                 </ul>
             </nav>
-			<h3>Eliminado correctamente!</h3>
+			<h2>Eliminado correctamente!</h2>
 			<br><br>
 			<form action="insumos.php" method="post">
 				<input type="submit" value = "Volver a grilla insumos">

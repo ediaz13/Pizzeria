@@ -28,13 +28,13 @@ $resultado = mysqli_query($con,$sql);
 			<div id="banner"></div>
             <nav id="navigation">
                 <ul id="nav">
-                    <li><a href="index.php">Inicio</a></li>
+                    <li><a href="../index.php">Inicio</a></li>
                     <li><a href="clientes.php">Clientes</a></li>
-                    <li><a href="proveedores.php">Proveedores</li>
-                    <li><a href="#">Insumos</a></li>
+                    <li><a href="../Proveedores/proveedores.php">Proveedores</li>
+                    <li><a href="../Insumos/insumos.php">Insumos</a></li>
                 </ul>
             </nav>
-			<h3>Eliminado correctamente!</h3>
+			<h2>Eliminado correctamente!</h2>
 			<br><br>
 			<form action="clientes.php" method="post">
 				<input type="submit" value = "Volver a grilla clientes">

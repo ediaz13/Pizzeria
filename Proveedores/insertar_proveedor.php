@@ -11,15 +11,15 @@
             <nav id="navigation">
                 <ul id="nav">
                     <li><a href="../index.php">Inicio</a></li>
-                    <li><a href="clientes.php">Clientes</a></li>
+                    <li><a href="../Clientes/clientes.php">Clientes</a></li>
                     <li><a href="proveedores.php">Proveedores</li>
-                    <li><a href="#">Insumos</a></li>
+                    <li><a href="../Insumos/insumos.php">Insumos</a></li>
                 </ul>
             </nav>
 			<div id="content_area">
-				<h2> Insertar Cliente </h2>
+				<h2> Insertar Proveedor </h2>
 				<form action="insertar.php" method="post">
-					razon social <input type="text" name="razon social">
+					razon social <input type="text" name="razonsocial">
 					<br>
 					cuit <input type="text" name="cuit">
 					<br>

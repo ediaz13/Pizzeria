@@ -28,7 +28,7 @@
             </nav>
 			<div id="content_area">
 
-				<h3> Consulta Cliente </h3>
+			<h2> Consulta Cliente </h2>
 				<form action="consulta_especifica_cliente.php" method="post">
 					Por id:  <input type="text" name = "id_cliente">
 					<br>
@@ -41,23 +41,21 @@
 				</form>
 
 
-				<h3> Insertar Cliente </h3>
+				<h2> Insertar Cliente </h2>
 				<form action="insertar_cliente.php" method="post">
 					<input type="submit" value = "Insertar">
 				</form>
 
-				<h3> Eliminar Cliente </h3>
+				<h2> Eliminar Cliente </h2>
 				<form action="eliminar_cliente.php" method="post">
 					<input type="submit" value = "Eliminar">
 				</form>
 
-				<h3> Actualizar Cliente </h3>
+				<h2> Actualizar Cliente </h2>
 				<form action="actualizar_cliente.php" method="post">
 					<input type="submit" value = "Actualizar">
 				</form>
-
 				<br><br>
-				
 				<table border="1">
 					<tr>
 						<td></td>
@@ -98,9 +96,7 @@
 				</table>
 				<br><br>
 
-				
-				
-			
+					
 		</div>
 </body>
 </html>

@@ -27,6 +27,36 @@
                 </ul>
             </nav>
 			<div id="content_area">
+
+			<h2> Consulta Proveedor </h2>
+				<form action="consulta_especifica_proveedor.php" method="post">
+					Por id:  <input type="text" name = "id_proveedor">
+					<br>
+					Por razón social: <input type="text" name = "razonsocial">
+					<br>
+					Por CUIT: <input type="text" name = "cuit">
+					<br>
+					<br>
+					<input type="submit" value = "consulta">
+				</form>
+
+
+				<h2> Insertar Proveedor </h2>
+				<form action="insertar_proveedor.php" method="post">
+					<input type="submit" value = "Insertar">
+				</form>
+
+				<h2> Eliminar Proveedor </h2>
+				<form action="borrar_proveedor.php" method="post">
+					<input type="submit" value = "Eliminar">
+				</form>
+
+				<h2> Actualizar Proveedor </h2>
+				<form action="actualizar_proveedor.php" method="post">
+					<input type="submit" value = "Actualizar">
+				</form>
+				<br>
+				<br>
 				<table border="1">
 					<tr>
 						<td></td>
@@ -57,33 +87,7 @@
 				</table>
 				<br><br>
 
-				<h3> Consulta Proveedor </h3>
-				<form action="consulta_especifica_proveedor.php" method="post">
-					Por id:  <input type="text" name = "id_proveedor">
-					<br>
-					Por razón social: <input type="text" name = "razonsocial">
-					<br>
-					Por CUIT: <input type="text" name = "cuit">
-					<br>
-					<br>
-					<input type="submit" value = "consulta">
-				</form>
-
-
-				<h3> Insertar Proveedor </h3>
-				<form action="insertar_proveedor.php" method="post">
-					<input type="submit" value = "Insertar">
-				</form>
-
-				<h3> Eliminar Proveedor </h3>
-				<form action="eliminar_proveedor.php" method="post">
-					<input type="submit" value = "Eliminar">
-				</form>
-
-				<h3> Actualizar Proveedor </h3>
-				<form action="actualizar_proveedor.php" method="post">
-					<input type="submit" value = "Actualizar">
-				</form>
+				
 		</div>
 </body>
 </html>

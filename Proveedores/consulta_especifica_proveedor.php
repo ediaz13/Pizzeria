@@ -19,7 +19,7 @@ $resultado = mysqli_query($con, $sql);
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title><?php echo $title; ?></title>
-	<link rel="stylesheet" type="text/css" href="Styles/Stylesheet.css" />
+	<link rel="stylesheet" type="text/css" href="../Styles/Stylesheet.css" />
 </head>
 
 <body>
@@ -36,41 +36,32 @@ $resultado = mysqli_query($con, $sql);
 		<div id="content_area">
 			<table border="1">
 				<tr>
-					<td></td>
-					<td>Nombre</td>
-					<td>Apellido</td>
-					<td>DNI</td>
-					<td>Calle</td>
-					<td>Altura</td>
-					<td>Barrio</td>
-					<td>Localidad</td>
-					<td>Tarjeta debito</td>
-					<td>Nro mercado pago</td>
+				<td></td>
+						<td>Razon Social</td>
+						<td>Cuit</td>
+						<td>Direccion</td>
+						<td>Telefono</td>
 				</tr>
 
-				<?php
-				while ($mostrar = mysqli_fetch_array($resultado)) {
-				?>
+					<?php
+					while ($mostrar=mysqli_fetch_array($resultado)) {
+					?>
 
 					<tr>
-						<td><?php echo $mostrar['id_cliente'] ?></td>
-						<td><?php echo $mostrar['nombre'] ?></td>
-						<td><?php echo $mostrar['apellido'] ?></td>
-						<td><?php echo $mostrar['dni'] ?></td>
-						<td><?php echo $mostrar['calle'] ?></td>
-						<td><?php echo $mostrar['altura'] ?></td>
-						<td><?php echo $mostrar['barrio'] ?></td>
-						<td><?php echo $mostrar['localidad'] ?></td>
-						<td><?php echo $mostrar['nro_tarjeta_debito'] ?></td>
-						<td><?php echo $mostrar['nro_mercado_pago'] ?></td>
+						<td><?php echo $mostrar['id_proveedor'] ?></td>
+						<td><?php echo $mostrar['razonsocial'] ?></td>
+						<td><?php echo $mostrar['cuit'] ?></td>
+						<td><?php echo $mostrar['direccion'] ?></td>
+						<td><?php echo $mostrar['telefono'] ?></td>
 					</tr>
-				<?php
-				}
-				?>
+
+					<?php 
+					}
+					?>
 			</table>
 			<br><br>
-			<form action="clientes.php" method="post">
-				<input type="submit" value="Volver a grilla clientes">
+			<form action="proveedores.php" method="post">
+				<input type="submit" value="Volver a grilla proveedores">
 			</form>
 
 		</div>
@@ -85,6 +76,6 @@ echo "<br>";
 echo "Operacion realizada con exito";
 echo "<br>";
 echo "<br>";
-echo '<a href="http://localhost/" class="button">Volver al inicio</a>';
+echo '<a href="http://localhost/index.php" class="button">Volver al inicio</a>';
 
 ?>

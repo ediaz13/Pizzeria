@@ -32,7 +32,7 @@ mysqli_close($con);
                 </ul>
             </nav>
 
-            <h3>Ingresado correctamente!</h3>
+            <h2>Ingresado correctamente!</h2>
 			<br><br>
 			
 			<form action="insumos.php" method="post">

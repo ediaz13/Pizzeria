@@ -27,12 +27,12 @@ mysqli_close($con);
                 <ul id="nav">
                     <li><a href="../index.php">Inicio</a></li>
                     <li><a href="clientes.php">Clientes</a></li>
-                    <li><a href="proveedores.php">Proveedores</li>
-                    <li><a href="#">Insumos</a></li>
+                    <li><a href="../Proveedores/proveedores.php">Proveedores</li>
+                    <li><a href="../Insumos/insumos.php">Insumos</a></li>
                 </ul>
             </nav>
 
-            <h3>Ingresado correctamente!</h3>
+            <h2>Ingresado correctamente!</h2>
 			<br><br>
 			
 			<form action="clientes.php" method="post">

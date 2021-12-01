@@ -1,29 +1,36 @@
 <?php
 $title = "Home";
 $content = '
-<h3>Pizzeria</h3>
+<h2>Pizzeria</h2>
 <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lectus urna,
-    viverra in luctus quis, ullamcorper quis lorem. Vestibulum vulputate pellentesque
-    velit, et placerat dolor pulvinar in. Class aptent taciti sociosqu ad litora torquent
-    per conubia nostra, per inceptos himenaeos. Sed sit amet velit at purus elementum
-    dapibus. Nulla dapibus auctor vulputate. Sed cursus nisi at mauris mollis semper.
-    Vestibulum consectetur cursus dui sit amet pretium.
+
+    La elaboracion de Pizzas y empanadas “TODO CASERO” que está ubicada en Prov. de Buenos Aires.
+    Una empresa familiar que desde hace años acompaña la mesa de quienes nos siguen 
+    eligiendo, ofreciendo la mejor calidad y sabor.
+
 </p>
 
 
-<h3>Manual de usuario</h3>
+<h2>Manual de usuario</h2>
 <p>
-    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-    himenaeos. Donec porttitor placerat nunc a consectetur. Ut fermentum eleifend molestie.
-    Donec fermentum risus sit amet ante cursus cursus. In hac habitasse platea dictumst.
-    Praesent semper ante ut felis molestie aliquet. Nam quis dui a magna molestie blandit
-    id et justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-    per inceptos himenaeos. Sed felis mauris, mattis a vulputate a, gravida nec metus.
-    Vivamus elit augue, ullamcorper eget scelerisque vitae, tincidunt eget lorem. Curabitur
-    id nibh libero, sed pulvinar nisi. Curabitur ultrices, neque in dignissim viverra,
-    justo nisl dignissim magna, a tempor eros turpis in diam. Suspendisse potenti. Sed
-    tincidunt est ac elit bibendum nec varius ante vestibulum.
+    El presente manual de usuario tiene como finalidad dar a conocer de manera detallada y 
+    sencilla el sistema de registro de datos (clientes, proveedores, insumos) de "Todo Casero",
+    para que cualquier usuario pueda sacar el máximo partido de la misma.
+    <br>
+
+    <img  id="pantallaMenu" src="./Images/pantalla.png">
+<br>
+<br>
+<p>
+
+    Menu superior: se encuentran los diferentes accesos, los cuales nos permiten acceder a 
+    pantallas diferenciales que nos permiten realizar las acciones o consultas que necesitamos.
+<br>
+    Acciones de consultas: se selecciona la accion que se desea realizar. La misma tiene la 
+    opcion de ingresar parametros de busqueda para que la consulta sea mas especifica.
+<br>
+    Posteriormente  se visualiza la consulta por medio de una grilla.
+
 </p>';
 
 include 'Template.php';

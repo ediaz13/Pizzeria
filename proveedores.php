@@ -56,7 +56,7 @@
 					<br>
 					<input type="submit" value = "consulta">
 				</form>
-				<h2>Eliminar proveedor</h3>
+				<h2>Eliminar proveedor</h2>
 				<form action = "borrar.php">
 					Por id:  <input type="text" name = "id_cliente">
 					<br>

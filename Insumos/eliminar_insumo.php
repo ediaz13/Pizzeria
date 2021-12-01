@@ -17,7 +17,7 @@
                 </ul>
             </nav>
 			<div id="content_area">
-				<h2>Eliminar Insumos</h3>
+				<h2>Eliminar Insumos</h2>
 				<form action = "borrar.php">
 					Por id_insumo:  <input type="text" name = "id_insumos">
 					<br>

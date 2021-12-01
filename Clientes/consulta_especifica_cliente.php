@@ -19,7 +19,7 @@ $resultado = mysqli_query($con, $sql);
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title><?php echo $title; ?></title>
-	<link rel="stylesheet" type="text/css" href="Styles/Stylesheet.css" />
+	<link rel="stylesheet" type="text/css" href="../Styles/Stylesheet.css" />
 </head>
 
 <body>
@@ -27,16 +27,16 @@ $resultado = mysqli_query($con, $sql);
 		<div id="banner"></div>
 		<nav id="navigation">
 			<ul id="nav">
-				<li><a href="index.php">Inicio</a></li>
+				<li><a href="../index.php">Inicio</a></li>
 				<li><a href="clientes.php">Clientes</a></li>
-				<li><a href="proveedores.php">Proveedores</li>
-				<li><a href="#">Insumos</a></li>
+				<li><a href="../Proveedores/proveedores.php">Proveedores</li>
+				<li><a href="../Insumos/insumos.php">Insumos</a></li>
 			</ul>
 		</nav>
 		<div id="content_area">
 			<table border="1">
 				<tr>
-					<td></td>
+				<td></td>
 					<td>Nombre</td>
 					<td>Apellido</td>
 					<td>DNI</td>
@@ -85,6 +85,6 @@ echo "<br>";
 echo "Operacion realizada con exito";
 echo "<br>";
 echo "<br>";
-echo '<a href="http://localhost/" class="button">Volver al inicio</a>';
+echo '<a href="http://localhost/index.php" class="button">Volver al inicio</a>';
 
 ?>

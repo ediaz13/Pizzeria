@@ -17,7 +17,7 @@
                 </ul>
             </nav>
 			<div id="content_area">
-                  <h2> Actualizar Insumos</h4>
+                  <h2> Actualizar Insumos</h2>
 				<form action="actualizar.php" method="post">
 					<p> Ingrese el id del Insumo. </p>
 					ID Insumo <input type="number" name="id_insumos"> 

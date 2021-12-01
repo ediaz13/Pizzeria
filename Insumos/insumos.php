@@ -27,6 +27,32 @@
                 </ul>
             </nav>
 			<div id="content_area">
+			<h2> Consulta Insumos </h2>
+				<form action="consulta_especifica_insumo.php" method="post">
+					Por id:  <input type="text" name = "id_insumos">
+					<br>
+					Por descripcion: <input type="text" name = "descripcion">
+					<br>
+					<input type="submit" value = "consulta">
+				</form>
+
+
+				<h2> Insertar Insumos </h2>
+				<form action="insertar_insumo.php" method="post">
+					<input type="submit" value = "Insertar">
+				</form>
+
+				<h2> Eliminar Insumos </h2>
+				<form action="eliminar_insumo.php" method="post">
+					<input type="submit" value = "Eliminar">
+				</form>
+
+				<h2> Actualizar Insumos </h2>
+				<form action="actualizar_insumo.php" method="post">
+					<input type="submit" value = "Actualizar">
+				</form>
+				<br>
+				<br>
 				<table border="1">
 					<tr>
 						<td></td>
@@ -55,30 +81,7 @@
 				</table>
 				<br><br>
 
-				<h3> Consulta Insumos </h3>
-				<form action="consulta_especifica_insumo.php" method="post">
-					Por id:  <input type="text" name = "id_insumos">
-					<br>
-					Por descripcion: <input type="text" name = "descripcion">
-					<br>
-					<input type="submit" value = "consulta">
-				</form>
-
-
-				<h3> Insertar Insumos </h3>
-				<form action="insertar_insumo.php" method="post">
-					<input type="submit" value = "Insertar">
-				</form>
-
-				<h3> Eliminar Insumos </h3>
-				<form action="eliminar_insumo.php" method="post">
-					<input type="submit" value = "Eliminar">
-				</form>
-
-				<h3> Actualizar Insumos </h3>
-				<form action="actualizar_insumo.php" method="post">
-					<input type="submit" value = "Actualizar">
-				</form>
+				
 			</div>
 			
 		</div>
