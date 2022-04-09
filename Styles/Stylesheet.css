@@ -2,7 +2,8 @@ body
 {
     font-family: lucida grande ,tahoma,verdana,arial,sans-serif;
     background-color: #ffffff;
-    background-image: url(../Images/pizza-background.jpg);
+    background-image: url(../Images/fondo_beige_pizzeria.png);
+    
 
 }
 
@@ -80,9 +81,10 @@ h2 {
 input[type="submit" i] 
 {
     
-    background-color: rgb(236, 13, 13);
+    background-color: whitesmoke(236, 13, 13);
     color: -internal-light-dark(black, white);
-    padding: 2px 12px
+    padding: 4px 20px
+
     
 }
 
@@ -119,7 +121,7 @@ input[type="submit" i]
 
 #nav a:hover
 {
-    color: rgb(236, 13, 13);
+    color: whitesmoke(236, 13, 13);
 }
 
 .imgLeft
@@ -143,4 +145,82 @@ input[type="submit" i]
 #pantallaMenu{
     width: 1041px;
     height: 372px;
+}
+.Carousel
+
+    body{
+        font-family:sans-serif ;
+        display: flex ;
+        justify-content: center;
+        align-items: center ;
+    }
+.Carousel{
+    width: 120px;
+    height: 170px;
+   
+   
+}
+
+.carousel-item{
+    width: 120px;
+    height: 170px;
+    margin: 0px 0 10px 10px;
+    padding: 10px;
+    justify-content: center;
+}
+
+body {
+    background-color: #89FAD0;
+    font-family: 'Lobster';
+}
+
+.carousel {
+    position: absolute;
+    height: 200px;
+    width: 810px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.arrow {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    color: #228291;
+    line-height: 30px;
+    margin-top: 85px;
+    z-index: 1000;
+}
+
+
+.Image{
+    display: flex;
+    transform: translater(0);
+}
+
+.Controls{
+    height: 50px ;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button{
+    bottom: auto;
+    background-color: red;
+    flex-basis: 33em;
+    cursor: pointer;
+}
+
+table
+{
+    background-color: white;
 }

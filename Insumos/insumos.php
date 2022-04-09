@@ -14,7 +14,16 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title><?php echo $title; ?></title>
         <link rel="stylesheet" type="text/css" href="../Styles/Stylesheet.css" />
-    </head>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		 
+		<title>Insumos</title> 
+		<link href="css/bootstrap.min.css" rel="stylesheet"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		
+	</head> 
+
+
     <body>
 		<div id="wrapper">
 			<div id="banner"></div>
@@ -26,7 +35,48 @@
                     <li><a href="insumos.php">Insumos</a></li>
                 </ul>
             </nav>
+
+			<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+		
+			<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active" data-bs-interval="4000">
+				<img src="../Images/Pizza 1.png" class="d-block w-10" alt="banner 1">
+				</div>
+				<div class="carousel-item"data-bs-interval="4000">
+				<img src="../Images/Pizza 2.png" class="d-block w-10" alt="banner 2">
+				</div>
+				<div class="carousel-item"data-bs-interval="4000">
+				<img src="../Images/Pizza 3.png" class="d-block w-10" alt="banner 3">
+				</div>
+				<div class="carousel-item"data-bs-interval="4000">
+				<img src="../Images/Pizza 4.png" class="d-block w-10" alt="banner 4">
+				</div>
+				<div class="carousel-item"data-bs-interval="4000">
+				<img src="../Images/Pizza 5.png" class="d-block w-10" alt="banner 5">
+				</div>
+				<div class="carousel-item"data-bs-interval="4000">
+				<img src="../Images/Pizza 6.png" class="d-block w-10" alt="banner 6">
+				</div>
+				<div class="carousel-item"data-bs-interval="4000">
+				<img src="../Images/Pizza 7.png" class="d-block w-10" alt="banner 7">
+				</div>
+			</div>
+	
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Anterior</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Siguiente</span>
+			</button>
+			</div>
+
 			<div id="content_area">
+
+		</div>	
+		
 			<h2> Consulta Insumos </h2>
 				<form action="consulta_especifica_insumo.php" method="post">
 					Por id:  <input type="text" name = "id_insumos">
@@ -35,55 +85,70 @@
 					<br>
 					<input type="submit" value = "consulta">
 				</form>
+				<br>
+				<br>
+				<br>
+			
 
-
-				<h2> Insertar Insumos </h2>
+			<div class="btn-group" role="group">
 				<form action="insertar_insumo.php" method="post">
 					<input type="submit" value = "Insertar">
 				</form>
-
-				<h2> Eliminar Insumos </h2>
 				<form action="eliminar_insumo.php" method="post">
 					<input type="submit" value = "Eliminar">
 				</form>
-
-				<h2> Actualizar Insumos </h2>
 				<form action="actualizar_insumo.php" method="post">
 					<input type="submit" value = "Actualizar">
 				</form>
 				<br>
 				<br>
-				<table border="1">
-					<tr>
-						<td></td>
-						<td>Descripción</td>
-						<td>Cantidad</td>
-						<td>Disponibilidad</td>
-					</tr>
 
-					<?php
+			</div>
+			<br>
+			<br><br>
+
+			
+			<table class="table table-responsive table-bordered table-hover">
+				<thead>
+					<tr>
+						<th>Id</th>
+						<th>Descripción</th>
+						<th>Cantidad</th>
+						<th>Disponibilidad</th>
+					</tr>
+				</thead>
+
+				<?php
 					$sql="SELECT * FROM insumos";
 					$result=mysqli_query($conexion, $sql);
 					
 					while ($mostrar=mysqli_fetch_array($result)) {
 					?>
 
+				<tbody>
 					<tr>
 						<td><?php echo $mostrar['id_insumos'] ?></td>
 						<td><?php echo $mostrar['descripcion'] ?></td>
 						<td><?php echo $mostrar['cantidad_unidades'] ?></td>
 						<td><?php echo $mostrar['disponibilidad'] ?></td>
-					</tr>
+					<tr>
 
+					</tr>
+			
 					<?php 
 					}
 					?>
+				</tbody>
 				</table>
 				<br><br>
 
-				
-			</div>
-			
 		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+				
+		</div>
+		<br><br>
 </body>
 </html>
+

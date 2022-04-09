@@ -14,12 +14,18 @@ $resultado = mysqli_query($con, $sql);
 
 
 <!DOCTYPE html>
-<html>
+<html lange="en"></html>
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title><?php echo $title; ?></title>
 	<link rel="stylesheet" type="text/css" href="../Styles/Stylesheet.css" />
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+	<title>Carousel</title>
+
 </head>
 
 <body>
@@ -33,6 +39,7 @@ $resultado = mysqli_query($con, $sql);
 				<li><a href="insumos.php">Insumos</a></li>
 			</ul>
 		</nav>
+		
 		<div id="content_area">
 			<table border="1">
 				<tr>
@@ -63,7 +70,9 @@ $resultado = mysqli_query($con, $sql);
 			</form>
 
 		</div>
+		
 	</div>
+
 </body>
 
 </html>
